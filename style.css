@@ -1,0 +1,166 @@
+html {
+  background-image: url(background.jpg);
+  position: relative;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-box {
+  position: absolute;
+  margin: 2em;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 4em;
+}
+
+.soon {
+  color: hsl(180, 90%, 35%);
+  text-shadow: 1px 1px #000;
+}
+
+.about {
+  width: 42%;
+  height: auto;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 1em;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5em;
+  text-align: center;
+}
+
+p {
+  /*color: hsl(180, 80%, 25%);*/
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
+}
+
+/*Specialized strikethrough that looks like a crossthrough*/
+.cross {
+  position: relative;
+  display: inline-block;
+}
+.cross::before,
+.cross::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.cross::before {
+  border-bottom: 2px solid orange;
+  -webkit-transform: skewY(-10deg);
+  transform: skewY(-10deg);
+}
+.cross::after {
+  border-bottom: 2px solid orange;
+  -webkit-transform: skewY(10deg);
+  transform: skewY(10deg);
+}
+
+
+#social {
+  margin: 20px 10px;
+  text-align: left;
+}
+
+ /*Style for all buttons*/
+.smGlobalBtn {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ddd;
+  box-shadow: 0 3px 3px #999;
+  padding: 0px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 27px;
+  -moz-border-radius: 27px;
+  -webkit-border-radius: 27px;
+}
+
+/*Facebook button class*/
+.facebookBtn {
+  background: #3B5998;
+}
+
+.facebookBtn:hover {
+  color: #3B5998;
+  background: #fff;
+  border-color: #3B5998;
+}
+
+/*Instagram button style*/
+.instagramBtn {
+  background: #e95950;
+}
+
+.instagramBtn:hover {
+  color: #e95950;
+  background: #fff;
+  border-color: #e95950;
+}
+
+/*Linkedin button style*/
+.linkedinBtn {
+  background: #0077b5;
+}
+
+.linkedinBtn:hover {
+  color: #0077b5;
+  background: #fff;
+  border-color: #0077b5;
+}
+
+/*Github button style*/
+.githubBtn {
+  background: #333;
+}
+
+.githubBtn:hover {
+  color: #333;
+  background: #fff;
+  border-color: #333;
+}
+
+/*Codepen button style*/
+.codepenBtn {
+  background: #42CA7C;
+}
+
+.codepenBtn:hover {
+  color: #42CA7C;
+  background: #fff;
+  border-color: #42CA7C;
+}
+
+/*Email button style*/
+.emailBtn {
+  background: #d22626;
+}
+
+.emailBtn:hover {
+  color: #d22626;
+  background: #fff;
+  border-color: #d22626;
+}
+
+@media screen and (max-width: 680px) {
+  .about {
+    width: 100%; 
+  }
+  #social {
+    text-align: center;
+  }
+}
